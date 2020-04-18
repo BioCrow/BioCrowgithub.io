@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head html lang="en">
+<title>CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #000000
+;
+  font-family: courier;
+  padding: 30px;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 300px;
+  background: #000066;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-family:Times New Roman;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 300px;
+  background-color: #000033;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #00004d;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+  
+  a:link{
+  color: white;}
+  
+  a:hover{color: yellow;
+}
+
+  a:visited{color: purple;}
+  
+  img {max-height: 100%;
+       max-width: 100%;}
+</style>
+</head>
+<body>
+
+
+<header>
+<h2>𝓒𝓸𝓵𝓭𝓹𝓵𝓪𝔂<h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home Page</a></li>
+      <li><a href="#">About the Band</a></li>
+      <li><a href="#">Top Albums</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Tour</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+   <img src="https://ichef.bbci.co.uk/news/466/mcs/media/images/50255000/jpg/_50255115_newcoldplay.jpg"/>
+  </article>
+ 
+  
+</section>
+
+<footer>
+  <i>Copyright &copy;2020 Wendell Holder. All Rights Reserved
+</footer>
+
+</body>
+</html>
